@@ -1,6 +1,6 @@
 # YouTube Clone (HTML & CSS)
 
-> **Note:** This project was built in December 12th 2024 as my first web project after learning HTML and CSS. It is a static landing page that mimics YouTube’s interface.
+> **Note:** This project was built in July 19th 2024 as my first web project after learning HTML and CSS. It is a static landing page that mimics YouTube’s interface.
 
 ![Demo Image](./Demo.png)
 
