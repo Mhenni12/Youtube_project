@@ -18,11 +18,17 @@ This project helped me practice **HTML structure, CSS styling, and responsive we
 ## Folder Structure
 
 Youtube-project/
+
 │
+
 ├── channel_pictures/ # Images for channel avatars
+
 ├── icons/ # Icons used in the UI
+
 ├── styles/ # CSS files
+
 ├── thumbnails/ # Video thumbnail images
+
 └── youtube.html # Main HTML file
 
 
