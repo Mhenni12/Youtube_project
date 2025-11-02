@@ -1,0 +1,142 @@
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-title-link {
+    color: black;
+    text-decoration: none;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 870px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1124) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1125px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+    border-radius: 3px;;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+}
+
+
+
+/*Creating the channel info tooltip*/
+/*position: absolute; inside position:relative;*/
+
+.profile-picture-container {
+    position: relative;
+    /*display: inline-block; is used to make the div only take up as much space as needed*/
+    /*So the tooltip is activated only if we hover over the channel picture*/
+    display: inline-block;
+}
+
+.profile-picture-container .tooltip {
+    background-color: white;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 50px;
+    /*z-index is used to make the tooltip appear above other elements*/
+    z-index: 50;
+
+    opacity: 0;
+    /*the opacity makes the tooltip disapear if the channel picture is not hovered over*/
+    pointer-events: none;
+    /*prevents the tooltip from appearning when we hover over it*/
+
+    transition: opacity 0.15s;
+}
+
+.profile-picture-container:hover .tooltip {
+    /*Makes the tooltip appear when we hover over the picture*/
+    opacity: 1;
+}
+
+.tooltip-channel-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+.channel-info-grid {
+    /*prevents text from wrapping around*/
+    white-space: nowrap;
+}
+
+.tooltip-channel-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.tooltip-channel-subscribers {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
